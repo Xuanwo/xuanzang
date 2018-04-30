@@ -1,0 +1,31 @@
+package: github.com/Xuanwo/xuanzang
+import:
+# Command line tools
+- package: github.com/spf13/cobra
+# YAML
+- package: gopkg.in/yaml.v2
+  version: v2.2.1
+# Go shared tools
+- package: github.com/pengsrc/go-shared
+  version: v0.2.0
+# DOM tree operator
+- package: github.com/PuerkitoBio/goquery
+  version: v1.4.0
+# Logger
+- package: github.com/rs/zerolog
+  version: v1.6.0
+# Blot DB
+- package: github.com/boltdb/bolt
+  version: v1.3.1
+# Msgpack
+- package: github.com/vmihailenco/msgpack
+  version: v3.3.1
+# Go chi
+- package: github.com/go-chi/chi
+  version: v3.3.2
+
+# Fulltext search engine
+- package: github.com/huichen/wukong
+- package: github.com/cznic/kv
+- package: github.com/huichen/murmur
+- package: github.com/huichen/sego

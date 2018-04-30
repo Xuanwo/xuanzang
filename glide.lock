@@ -1,0 +1,94 @@
+hash: 334898d9d3a6afd1f2d508b4e4e7f3297c170d8d74e5bec51c1e97297ea27e68
+updated: 2018-04-30T19:00:47.795519777+08:00
+imports:
+- name: github.com/adamzy/cedar-go
+  version: 80a9c64b256db37ac20aff007907c649afb714f1
+- name: github.com/andybalholm/cascadia
+  version: 901648c87902174f774fac311d7f176f8647bdaa
+- name: github.com/boltdb/bolt
+  version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
+- name: github.com/cznic/fileutil
+  version: 6a051e75936f623600b67c2b1116b6b6c0ffb936
+- name: github.com/cznic/internal
+  version: 4747030f7cf2f4c0a01512b00cd68734b167ac3b
+  subpackages:
+  - buffer
+  - file
+  - slice
+- name: github.com/cznic/kv
+  version: 892ccf731fb7aa5e9aa300eb24456d1519afcfc7
+- name: github.com/cznic/lldb
+  version: bea8611dd5c407f3c5eab9f9c68e887a27dc6f0e
+- name: github.com/cznic/mathutil
+  version: 7764e6a2216aaa02c36f75aad62538d39c2962c2
+- name: github.com/cznic/sortutil
+  version: 4c7342852e65c2088c981288f2c5610d10b9f7f4
+- name: github.com/cznic/zappy
+  version: 2533cb5b45cc6c07421468ce262899ddc9d53fb7
+- name: github.com/edsrzf/mmap-go
+  version: 0bce6a6887123b67a60366d2c9fe2dfb74289d2e
+- name: github.com/go-chi/chi
+  version: e83ac2304db3c50cf03d96a2fcd39009d458bc35
+- name: github.com/golang/protobuf
+  version: 130e6b02ab059e7b717a096f397c5b60111cae74
+  subpackages:
+  - proto
+- name: github.com/huichen/murmur
+  version: e0489551cf5116e27d7cc69d97a53cdbdd028acf
+- name: github.com/huichen/sego
+  version: 1096a43cd61f719de8f053b37afda7ca7b8629fc
+- name: github.com/huichen/wukong
+  version: d014a1f19dae3664677c11bd25549cfc820cd890
+  subpackages:
+  - core
+  - engine
+  - storage
+  - types
+  - utils
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/pengsrc/go-shared
+  version: 807ee759d82c84982a89fb3dc875ef884942f1e5
+  subpackages:
+  - check
+  - reopen
+- name: github.com/PuerkitoBio/goquery
+  version: a86ea073017a6beddef78c8659e7224e8ca634b0
+- name: github.com/rs/zerolog
+  version: 05eafee0eb17d0150591a8f30f0fa592cc9b7471
+  subpackages:
+  - internal/cbor
+  - internal/json
+  - log
+- name: github.com/spf13/cobra
+  version: b26b538f693051ac6518e65672de3144ce3fbedc
+- name: github.com/spf13/pflag
+  version: e57e3eeb33f795204c1ca35f56c44f83227c6e66
+- name: github.com/vmihailenco/msgpack
+  version: a053f3dac71df214bfe8b367f34220f0029c9c02
+  subpackages:
+  - codes
+- name: golang.org/x/net
+  version: cd69bc3fc700721b709c3a59e16e24c67b58f6ff
+  subpackages:
+  - context
+  - html
+  - html/atom
+- name: golang.org/x/sys
+  version: dd2ff4accc098aceecb86b36eaa7829b2a17b1c9
+  subpackages:
+  - unix
+- name: google.golang.org/appengine
+  version: a2e0dc829727a4f957a7428b1f322805cfc1f362
+  subpackages:
+  - datastore
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/modules
+  - internal/remote_api
+- name: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+testImports: []

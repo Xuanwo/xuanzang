@@ -1,0 +1,15 @@
+port: 8080
+db_path: /path/to/database
+index_path: /path/to/index
+
+source:
+  type: sitemap
+  url: https://example.com/sitemap.xml
+  duration: 3600
+
+dictionary: /path/to/dictionary
+stop_tokens: /path/to/stop_tokens
+
+logger:
+  level: debug
+  output: stdout
