@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"strconv"
 	"sync"
 	"time"
 
@@ -66,7 +65,8 @@ var application = &cobra.Command{
 
 			r.Get("/", search.Search)
 
-			http.ListenAndServe(":"+strconv.FormatInt(int64(*c.Port), 10), r)
+			addr := fmt.Sprintf("%s:%d", *c.Host, *c.Port)
+			http.ListenAndServe(addr, r)
 		}()
 
 		wg.Wait()

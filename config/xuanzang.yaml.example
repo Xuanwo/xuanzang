@@ -1,3 +1,4 @@
+host: 127.0.0.1
 port: 8080
 db_path: /path/to/database
 index_path: /path/to/index

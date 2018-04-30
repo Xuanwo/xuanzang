@@ -12,6 +12,7 @@ import (
 
 // Config contains all config needed by xuanzang.
 type Config struct {
+	Host      *string `yaml:"host"`
 	Port      *int    `yaml:"port"`
 	DBPath    *string `yaml:"db_path"`
 	IndexPath *string `yaml:"index_path"`
@@ -55,6 +56,9 @@ func (c *Config) LoadFromContent(content []byte) error {
 
 // Check will check if the config is valid.
 func (c *Config) Check() error {
+	if c.Host == nil {
+		c.Host = convert.String("localhost")
+	}
 	if c.Port == nil {
 		c.Port = convert.Int(8080)
 	}
