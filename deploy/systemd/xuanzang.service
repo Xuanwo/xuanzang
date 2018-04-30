@@ -11,7 +11,7 @@ NoNewPrivileges=true
 User=xuanzang
 WorkingDirectory=~
 ExecStart=/usr/bin/xuanzang -c /etc/xuanzang/xuanzang.yaml
-KillSignal=SIGQUIT
+KillSignal=SIGTERM
 KillMode=mixed
 Restart=on-failure
 
