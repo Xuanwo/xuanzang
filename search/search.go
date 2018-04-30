@@ -28,7 +28,7 @@ type Document struct {
 
 // Search is the method to do search.
 func Search(w http.ResponseWriter, r *http.Request) {
-	w.Header().Add("Content-Type", "application/json")
+	w.Header().Add("Content-Type", "application/json; charset=utf-8")
 
 	text := ""
 	if v := r.URL.Query().Get("text"); v != "" {
