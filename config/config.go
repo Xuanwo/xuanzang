@@ -30,6 +30,7 @@ type Source struct {
 	Type     string `yaml:"type"`
 	URL      string `yaml:"url"`
 	Duration int    `yaml:"duration"`
+	TitleTag string `yaml:"title_tag"`
 }
 
 // New will create a new config instance.
@@ -72,6 +73,9 @@ func (c *Config) Check() error {
 
 	if c.Source == nil {
 		return errors.New("source is empty")
+	}
+	if c.Source.TitleTag == "" {
+		c.Source.TitleTag = "title"
 	}
 
 	if c.Dictionary == nil {

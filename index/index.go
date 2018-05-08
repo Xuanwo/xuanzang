@@ -48,7 +48,7 @@ func Index() {
 
 // indexDocument will index the every document.
 func indexDocument(doc *model.Doc) {
-	title, body, err := crawler.LoadContent(doc.URL)
+	title, body, err := crawler.LoadContent(doc.URL, contexts.Source.TitleTag)
 	if err != nil {
 		log.Error().Msgf("Index document failed for %v.", err)
 		return

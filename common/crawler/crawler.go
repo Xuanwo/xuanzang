@@ -10,7 +10,7 @@ import (
 )
 
 // LoadContent will load content form current page.
-func LoadContent(url string) (title, body string, err error) {
+func LoadContent(url, titleTag string) (title, body string, err error) {
 	resp, err := http.Get(url)
 	if err != nil {
 		log.Error().Msgf("HTTP Request failed for %v.", err)
@@ -28,5 +28,5 @@ func LoadContent(url string) (title, body string, err error) {
 		return "", "", constants.ErrCrawlerLoadFailed
 	}
 
-	return doc.Find("title").Text(), doc.Find("body").Text(), nil
+	return doc.Find(titleTag).Text(), doc.Find("body").Text(), nil
 }
